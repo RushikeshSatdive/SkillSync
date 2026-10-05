@@ -15,11 +15,11 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks(id) {
-          if (/\/node_modules\/(recharts|d3-[^/]+|victory-vendor|react-smooth)\/.test(id)) {
+          if (/node_modules\/(recharts|d3-[^/]+|victory-vendor|react-smooth)\//.test(id)) {
             return 'charts'
           }
 
-          if (id.includes('/node_modules/')) {
+          if (id.includes('node_modules')) {
             return 'vendor'
           }
         },
