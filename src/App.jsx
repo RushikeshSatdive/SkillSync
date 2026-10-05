@@ -186,9 +186,19 @@ function WorkbookNotice({ compact = false }) {
 
 function Brand({ light = false, onClick }) {
   return (
-    <button className={`brand ${light ? 'brand-light' : ''}`} onClick={onClick} aria-label="SkillSync home">
-      <span className="brand-mark"><Network size={19} strokeWidth={2.2} /></span>
-      <span className="brand-word">skill<span>sync</span></span>
+    <button
+      className={`brand ${light ? 'brand-light' : ''}`}
+      onClick={onClick}
+      aria-label="SkillSync home"
+    >
+      <span className="brand-mark">
+        <Network size={19} strokeWidth={2.2} />
+      </span>
+
+      <span className="brand-word">
+        <span className="brand-skill">Skill</span>
+        <span className="brand-sync">Sync</span>
+      </span>
     </button>
   )
 }
