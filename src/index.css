@@ -81,11 +81,18 @@ a { color: inherit; text-decoration: none; }
 .marketing-header-inner { display: flex; align-items: center; justify-content: space-between; width: min(1230px, calc(100% - 72px)); height: 100%; margin: 0 auto; }
 .brand { display: inline-flex; align-items: center; gap: 9px; padding: 0; color: #20243b; background: none; border: 0; text-align: left; }
 .brand-mark { display: grid; place-items: center; width: 33px; height: 33px; color: #fff; background: linear-gradient(140deg, #6f68fb, #4a43cf); border-radius: 11px; box-shadow: 0 5px 14px rgba(89, 81, 224, .3); }
-.brand-word { color: #171b2c; font-size: 19px; font-weight: 800; letter-spacing: -.07em; }
 .brand-word {
   display: inline-flex;
   align-items: center;
   font-weight: 700;
+}
+
+.brand-skill {
+  color: #ffffff;
+}
+
+.brand-sync {
+  color: #6258ed;
 }
 .brand-light .brand-word { color: #f6f6ff; }
 .brand-light .brand-word span { color: #a8a6ff; }
